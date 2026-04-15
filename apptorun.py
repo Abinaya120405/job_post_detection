@@ -7,8 +7,8 @@ import re
 # -------------------------------
 @st.cache_resource
 def load_model():
-    model = pickle.load(open("model.pkl", "rb"))
-    vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+    model = pickle.load(open("pac_model.pkl", "rb"))
+    vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
     return model, vectorizer
 
 model, vectorizer = load_model()
